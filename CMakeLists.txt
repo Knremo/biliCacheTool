@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8)
 
-project(biliconvert)
+project(bilicacheconvert)
 
 set(CXX_STANDARD_REQUIRED 11)
 
@@ -10,5 +10,5 @@ link_directories("${CMAKE_CURRENT_SOURCE_DIR}/ffmpeg/lib")
 #link_libraries(libavformat.dll.a)
 #link_libraries(libavutil.dll.a)
 
-add_executable(${PROJECT_NAME} main.cpp)
-target_link_libraries(${PROJECT_NAME} libavformat libavutil)
+add_executable(${PROJECT_NAME} bilicacheconvert.cpp ffmpeg_mux.cpp)
+target_link_libraries(${PROJECT_NAME} libavformat libavutil libavcodec)
