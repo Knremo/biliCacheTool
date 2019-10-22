@@ -10,5 +10,5 @@ link_directories("${CMAKE_CURRENT_SOURCE_DIR}/ffmpeg/lib")
 #link_libraries(libavformat.dll.a)
 #link_libraries(libavutil.dll.a)
 
-add_executable(${PROJECT_NAME} bilicacheconvert.cpp ffmpeg_mux.cpp)
+add_executable(${PROJECT_NAME} bilicacheconvert.cpp)
 target_link_libraries(${PROJECT_NAME} libavformat libavutil libavcodec)

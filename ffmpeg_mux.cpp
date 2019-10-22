@@ -1,16 +1,6 @@
-#ifdef __cplusplus
-extern "C"
-{
-#endif
-
-#include "libavformat/avformat.h"
-
-#ifdef __cplusplus
-}
-#endif
-
 #include <iostream>
 #include <string>
+#include "header.h"
 
 using namespace std;
 
