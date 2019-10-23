@@ -1,6 +1,19 @@
 #include <iostream>
 #include <string>
-#include "header.h"
+
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
+#include <libavformat/avformat.h>
+#include <libavcodec/avcodec.h>
+#include <libavutil/avutil.h>
+
+#ifdef __cplusplus
+}
+#endif
+
 
 using namespace std;
 
